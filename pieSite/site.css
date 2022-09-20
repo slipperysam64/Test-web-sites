@@ -12,7 +12,7 @@ p{
 }
 
 header{
-    background-color: blueviolet;
+    background-color: rgb(141, 16, 214);
     display: block;
     position: fixed;
     top: 0%;
@@ -50,7 +50,7 @@ footer {
     padding: 15px;
     background-color: darkgray;
 }
-
+/*
 .storefront{
     height: auto;
     width: 540px;
@@ -60,11 +60,11 @@ footer {
     height: 200px;
     width: 200px;
 }
-
+*/
 
 main {
     display: block;
-    background-image: url("img/back.jpg");
+    background-image: url("img/multi-colored-stripes.png");
     padding-top: 3em;
     padding-bottom: 3em;
     min-height: 85%;
