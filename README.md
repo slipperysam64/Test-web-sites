@@ -1,4 +1,3 @@
 # Test-web-sites
 
-# This is a website tutorial i found on plural sight
-#
+This repo is for me to test different website builds, and also work on tutorials. 
