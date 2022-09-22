@@ -45,27 +45,19 @@ aside, article {
     padding: 2em;
 }
 
-
+.logo{
+    height: 300px;
+    width: 300px;
+}
 
 footer {
     padding: 15px;
     background-color: darkgray;
 }
-/*
-.storefront{
-    height: auto;
-    width: 540px;
-}
-
-.logo{
-    height: 200px;
-    width: 200px;
-}
-*/
 
 main {
     display: block;
-    background-image: url("img/multi-colored-stripes.png");
+    background-image: url("/pieSite/img/multi-colored-stripes.png");
     padding-top: 3em;
     padding-bottom: 3em;
     min-height: 85%;
@@ -75,6 +67,10 @@ article{
     width: 75%;
 }
 
+.columns {
+    display: flex;
+}
+
 @media only screen and (min-width: 768px) {
     main {
     display: flex;
@@ -82,5 +78,9 @@ article{
 
     aside{
         margin-left: 2%;
+    }
+
+    .columns-desktop{
+        display: flex;
     }
 }

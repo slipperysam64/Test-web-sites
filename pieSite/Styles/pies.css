@@ -1,0 +1,35 @@
+.pie img {
+    width: 200px;
+}
+
+.pie {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    border: solid 1px #ccc;
+}
+
+.pie .title {
+    font-weight: bold;
+}
+
+.pie .columns {
+    width: 100%;
+}
+
+.pie .price {
+    text-align: right;
+}
+
+.pie .columns div {
+    width: 50%;
+}
+
+.pie button {
+    background-color: aquamarine;
+    padding: 10px;
+    border: solid 1px aquamarine;
+    border-radius: 3px;
+    color: #fff;
+}
