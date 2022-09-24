@@ -1,0 +1,108 @@
+:root {
+    --clr-900: hsl(207, 19%, 9%);
+    --clr-100: hsl(0, 0%, 100%);
+    --clr-400: #E8A225;
+    --clr-101: #2580E8;
+    /* extra colors
+    #0C4F9C, #429AFF, #2580E8, #9C6400, #E8A225
+    */
+  }
+  
+  *, *::before, *after {
+      box-sizing: box-border;
+    }
+    
+    body{
+      display: grid;
+      min-height: 100vh;
+      place-items: center;
+      line-height: 1.6;
+      background: var(--clr-900);
+    }
+  
+  .card {
+    color: var(--clr-101);
+    background-color:#9C6400 ;
+    background-image: url(Designelementsandprinciples.png);
+    background-size: cover;
+    padding: 10rem 0 0;
+    max-width: 35ch;
+    border-radius: .5rem;
+    overflow: hidden;
+  
+    transition: transform 500ms ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  
+  .card-content {
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+      hsl(0 0% 0% / 0),
+      hsl(0 0% 0% / .5),
+      hsl(0 0% 0% / 1)
+      ); 
+      
+      transform: translateY(60%);
+      transition: transform 500ms ease;
+  }
+  
+  .card-content > *:not(.card-title) {
+    opacity: 0;
+    transition: transform 500ms linear;
+  }
+  
+  .card:hover .card-content{
+    transform: translateY(0);
+  
+  }
+  
+  .card:hover .card-content > *:not(.card-title)  {
+   opacity: 1;
+  }
+  
+  .card-title {
+    position: relative;
+    width: max-content;
+  }
+  
+  .card-title::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    left: calc(var(--padding) * -1);
+    bottom: 0;
+    width: calc(100% + var(--padding));
+    background: var(--clr-400);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 500ms ease;
+  }
+  
+  .card:hover .card-title::after {
+    transform: scaleX(1);
+  }
+  
+  .button {
+    cursor: pointer;
+    display: inline;
+    text-decoration: none;
+    color: var(--clr-900);
+    background-color: var(--clr-400);
+    padding: .5em 1em;
+    border-radius: .25rem;
+    
+  }
+  
+  .button:hover,
+  .button:focus {
+    background-color: #9C6400;
+    
+  }
+  
+  
