@@ -30,6 +30,7 @@
     background-image: url(Designelementsandprinciples.jpg);
     background-size: cover;
     padding: 10rem 0 0;
+    margin: 1rem; 
     max-width: 35ch;
     border-radius: .5rem;
     overflow: hidden;
@@ -46,6 +47,8 @@
   .card:focus-within .card-title::after {
     transform: scaleX(1);
   }
+
+  
 
   /****Card-Content****/
 
@@ -85,7 +88,7 @@
   
   /****Media-Query****/
 
-  @media (hover){
+  @media (hover) {
     .card-content {
       transform: translateY(60%);
       transition: transform 500ms ease
@@ -119,7 +122,19 @@
     .card-title::after {
         transform: scaleX(0);
     }
+
+    .columns-desktop{
+    display: flex;
+    }
+    
   }
+
+  @media only screen and (min-width: 768px) {
+   .columns-desktop{
+    display: flex;
+   }
+  }
+ 
   
 /****Button****/
 
